@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TesteAcoperireCod {
 
     @Test
-    void testCMMDivizorC() {
+    public void testCMMDivizorC() {
         assertEquals(6, Main.CMMDivizorC(12, 18));
         assertEquals(5, Main.CMMDivizorC(10, 5));
         assertEquals(1, Main.CMMDivizorC(17, 23));
@@ -17,7 +17,7 @@ public class TesteAcoperireCod {
     }
 
     @Test
-    void testCMMMultipluC() {
+    public void testCMMMultipluC() {
         assertEquals(36, Main.CMMMultipluC(12, 18));
         assertEquals(10, Main.CMMMultipluC(10, 5));
         assertEquals(391, Main.CMMMultipluC(17, 23));
@@ -25,7 +25,7 @@ public class TesteAcoperireCod {
     }
 
     @Test
-    void testSumaTuturorNumerelorDintreCele2Numere() {
+    public void testSumaTuturorNumerelorDintreCele2Numere() {
         assertEquals(45, Main.sumaTuturorNumerelorDintreCele2Numere(5, 10));
         assertEquals(0, Main.sumaTuturorNumerelorDintreCele2Numere(-2,2));
         assertEquals(0, Main.sumaTuturorNumerelorDintreCele2Numere(0, 0));
@@ -33,14 +33,14 @@ public class TesteAcoperireCod {
     }
 
     @Test
-    void testProdusNumere() {
+    public void testProdusNumere() {
         assertEquals(60, Main.produsNumere(12, 5));
         assertEquals(0, Main.produsNumere(0, 10));
         assertEquals(-50, Main.produsNumere(-10, 5));
     }
 
     @Test
-    void testImpartireNumere() {
+    public void testImpartireNumere() {
         String rezultatFormatare = Main.impartireNumere(5, 2);
         double rezultatNumeric = 2.5;
 
