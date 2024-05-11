@@ -50,5 +50,20 @@ public class TesteAcoperireCod {
     }
 
 
+    //Teste pentru graful de acoperire pentru functia „sumaTuturorNumerelorDintreCele2Numere”
+    @Test
+    public void testIntervalCrescator() {
+        int rezultat = Main.sumaTuturorNumerelorDintreCele2Numere(1, 5);
+        assertEquals(15, rezultat);
+    }
+
+    @Test
+    public void testIntervalDescrescator() {
+        int rezultat = Main.sumaTuturorNumerelorDintreCele2Numere(5, 1);
+        assertEquals(15, rezultat);
+    }
+
+
+
 
 }

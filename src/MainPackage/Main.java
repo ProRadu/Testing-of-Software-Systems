@@ -44,16 +44,16 @@ public class Main {
     }
 
     public static int sumaTuturorNumerelorDintreCele2Numere(int start, int end) {
-        int sum = 0;
-        if (start > end) {
-            int temp = start;
-            start = end;
-            end = temp;
+        int sum = 0; //1
+        if (start > end) { //2
+            int temp = start; //3
+            start = end; //4
+            end = temp; //5
         }
-        for (int i = start; i <= end; i++) {
-            sum += i;
+        for (int i = start; i <= end; i++) { //6
+            sum += i; //7
         }
-        return sum;
+        return sum; //8
     }
 
     public static int produsNumere(int a, int b) {
